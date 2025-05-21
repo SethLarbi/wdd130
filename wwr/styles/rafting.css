@@ -1,79 +1,81 @@
-<link rel="stylesheet" href="styles/rafting.css">
 /* CSS Variables and Base Styles */
 :root {
---primary-color: #505033; /* drab dark brown */
---secondary-color: #264969; /* indigo dye */
---accent1-color: #cfcfb4; /* pearl */
---accent2-color: #b4cde4; /* columbia blue */
---heading-font: Georgia 400, 700, and black;
---body-font: Roboto 400, and 700;
+  --primary-color: #505033;        /* Drab dark brown */
+  --secondary-color: #264969;      /* Indigo dye */
+  --accent1-color: #cfcfb4;        /* Pearl */
+  --accent2-color: #b4cde4;        /* Columbia blue */
+
+  --heading-font: 'Georgia', serif;
+  --body-font: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
-/* Reset box-model for all elements */
+/* Reset box model for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body styles */
+/* Body Styles */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
 
-/* Limit and center page width */
+/* Layout container widths */
 header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+  width: 840px;
+  margin: 0 auto;
 }
 
-/* Headings styling */
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+/* Heading Styles */
 h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-/* Navigation, section, paragraph, and article spacing */
+/* Spacing for key content elements */
 nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+  margin: 16px;
+  padding: 8px;
 }
 
-/* Remove underline from links */
+/* Remove underlines from social media links */
 .socialmedia a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* Style the Hero Div with Overlays*/
+/* Hero Section Styling */
 .hero {
-    position: relative;
-} 
+  position: relative;
+}
 
-/* Style image within div class hero */
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+/* Hero Heading Overlay */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
 }
 
+/* Floating Image in Hero Article */
 .hero article img {
-    float: right;
-    width: 125px;
+  float: right;
+  width: 125px;
 }
