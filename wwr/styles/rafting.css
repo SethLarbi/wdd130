@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="styles/rafting.css">
+:root {
+--primary-color: #505033; /* drab dark brown */
+--secondary-color: #264969; /* indigo dye */
+--accent1-color: #cfcfb4; /* pearl */
+--accent2-color: #b4cde4; /* columbia blue */
+--heading-font: Georgia 400, 700, and black;
+--body-font: Roboto 400, and 700;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
