@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles/rafting.css">
+/* CSS Variables and Base Styles */
 :root {
 --primary-color: #505033; /* drab dark brown */
 --secondary-color: #264969; /* indigo dye */
@@ -13,19 +14,66 @@ header {
     color: var(--accent2-color);
 }
 
+/* Reset box-model for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
 
+/* Body styles */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
+/* Limit and center page width */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
+/* Headings styling */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Navigation, section, paragraph, and article spacing */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Remove underline from links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Style the Hero Div with Overlays*/
+.hero {
+    position: relative;
+} 
+
+/* Style image within div class hero */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
