@@ -18,9 +18,11 @@
 
 /* Body Styles */
 body {
-  font-family: var(--body-font);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: var(--accent1-color);
 }
+
 
 /* Layout container widths */
 header, main, footer {
