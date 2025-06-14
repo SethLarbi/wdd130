@@ -6,16 +6,13 @@
 }
 
 body {
-<<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background-color: #f5f9f7;
   color: #333;
-=======
   font-family: var(--body-font);
   font-weight: 400;
   color: var(--accent1-color);
->>>>>>> cb3f7fd15347822efc44b75e81b19930271c1f31
 }
 
 /* Header */
@@ -26,16 +23,15 @@ header {
   text-align: center;
 }
 
-<<<<<<< HEAD
-header img {
+
+header img{
   max-width: 120px;
-=======
 /* Heading Styles */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
-
+}
 /* Spacing for key content elements */
 nav, p, section, article {
   margin: 16px;
@@ -73,7 +69,6 @@ nav, p, section, article {
 .hero img {
   display: block;
   width: 100%;
->>>>>>> cb3f7fd15347822efc44b75e81b19930271c1f31
   height: auto;
 }
 
@@ -456,4 +451,3 @@ figcaption {
   font-size: 0.95rem;
   color: #333;
 }
-
