@@ -1,83 +1,294 @@
-/* CSS Variables and Base Styles */
-:root {
-  --primary-color: #505033;        /* Drab dark brown */
-  --secondary-color: #264969;      /* Indigo dye */
-  --accent1-color: #cfcfb4;        /* Pearl */
-  --accent2-color: #b4cde4;        /* Columbia blue */
-
-  --heading-font: 'Georgia', serif;
-  --body-font: 'Roboto', sans-serif;
-}
-
-/* Reset box model for all elements */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: var(--accent1-color);
+  line-height: 1.6;
+  background-color: #f5f9f7;
+  color: #333;
 }
 
-
-/* Layout container widths */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* Header Styles */
+/* Header */
 header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
+  background-color: #00796B;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* Heading Styles */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* Spacing for key content elements */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Remove underlines from social media links */
-.socialmedia a {
-  text-decoration: none;
-}
-
-/* Hero Section Styling */
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
+header img {
+  max-width: 120px;
   height: auto;
 }
 
-/* Hero Heading Overlay */
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
 }
 
-/* Floating Image in Hero Article */
+nav {
+  margin-top: 1rem;
+}
+
+nav a,
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+nav a:hover,
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation List */
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+.hero {
+  position: relative;
+  background-image: url('images/rafting-background.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Overlay layer */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black semi-transparent overlay */
+  z-index: 0;
+}
+
+/* Content above overlay */
+.hero h1,
+.hero article {
+  position: relative;
+  z-index: 1;
+}
+
+/* Article styling */
+.hero article {
+  background: rgba(255, 255, 255, 0.1); /* Optional: translucent box behind article */
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
 .hero article img {
-  float: right;
-  width: 125px;
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.hero article p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 121, 107, 0.75);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 2.5rem;
+}
+
+/* Article Content */
+.hero article {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin-top: -10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero article img {
+  float: left;
+  margin-right: 1.5rem;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.hero article p {
+  overflow: hidden;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+  background-color: #e0f2f1;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #004d40;
+}
+
+/* Figure & Images */
+figure {
+  text-align: center;
+  margin: 1rem;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Adventure Gallery */
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+/* Contact Info */
+#contact-info a {
+  color: #00796B;
+  text-decoration: underline;
+}
+
+/* Team Section */
+.employee-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.employee-profiles img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contact Form */
+#contact-form form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  background-color: #00796B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #004d40;
+}
+
+/* Adventure Images */
+section:last-of-type img {
+  width: 18%;
+  margin: 1%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+section:last-of-type img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .socialmedia {
+  margin-top: 1rem;
+}
+
+footer .socialmedia a img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .adventure-gallery,
+  .employee-profiles,
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  section:last-of-type img {
+    width: 45%;
+  }
 }
