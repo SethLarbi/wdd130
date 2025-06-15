@@ -30,35 +30,20 @@
       rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/splash.png" alt="Tini Waterfall Adventure Company Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
-  <header>
-    <h1> Tini Waterfall Adventure</h1>
-      <img src="https://sethlarbi.github.io/images/icons/coloredGears.png" alt="Sample Logo">
-      <h1> Tini Waterfall Adventure</h1>
-      <nav>
-        <ul class="navigation">
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-  </header>
+
+ <header>
+  <img src="images/splash.png" alt="Tini Waterfall Adventure Logo" class="logo">
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="trips.html">Trips</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
   <main>
-    <article>
-      <ol>
-        <li>img</li>
-        <li>h1</li>
-        <li>nav</li>
-      </ol>
+
     </article>
     <div class="hero">
       <img src="images/rafting60.jpg" alt="Rafting on a wild river">
@@ -76,27 +61,24 @@
         </p>
       </article>
     </div>
-    <section>
-      <h2>History</h2>
-      <p>
-        Founded in 2015 by the people of Adasewase, Tini Waterfall Adventure pioneered commercial rafting
-          in the Adasewase Forest. With a focus on safety and outdoor excitement, it has grown into a trusted guide for
-          scenic and whitewater trips on the Tini River. </p>
-          <figure>
-            <img src="/wwr/images/group-monkeys.jpg" alt="group monkeys.jpg" />
-            <figcaption>Monkeys swinging on trees</figcaption>
-          </figure>
-    </section>
-    <section id="adventures">
-      Founded in 2015 by the people of Adasewase, Tini Waterfall Adventure pioneered commercial rafting in the Adasewase
-      Forest.
-      With a focus on safety and outdoor excitement, it has grown into a trusted guide for scenic and whitewater trips
-      on the Tini River.
-      </p>
-      <figure>
-        <img src="/wwr/images/group monkeys.jpg" alt="group monkeys.jpg" />
-        <figcaption>Monkeys swinging on trees</figcaption>
-      </figure>
+<section class="history">
+  <div class="history-text">
+    <h2>History</h2>
+    <p>
+      Founded in 2015 by the people of Adasewase, Tini Waterfall Adventure pioneered commercial rafting in the Adasewase Forest. With a focus on safety and outdoor excitement, it has grown into a trusted guide for scenic and whitewater trips on the Tini River.
+
+      What began as a small local initiative has blossomed into one of Ghana’s premier eco-tourism experiences. In the early years, community members worked together to build sustainable infrastructure and train local guides to international safety standards. Their deep knowledge of the terrain and passionate storytelling brought the river’s natural beauty and cultural heritage to life for every visitor.
+
+      As word spread, Tini Waterfall Adventure attracted both local and international tourists. By 2018, the company expanded its offerings to include overnight camping trips, wildlife exploration tours, and educational programs for schools. These additions strengthened its mission to connect people with nature while fostering conservation awareness.
+
+      Despite challenges such as seasonal flooding and the COVID-19 pandemic, the company remained resilient—introducing online bookings, flexible scheduling, and stricter health protocols. Today, it continues to serve as a model of community-led tourism, inspiring visitors to “paddle with purpose and flow with nature,” while preserving the unique ecosystem of the Adasewase Forest.
+    </p>
+  </div>
+  <figure class="history-image">
+    <img src="images/group-monkeys.jpg" alt="Monkeys swinging on trees">
+    <figcaption>Monkeys swinging on trees</figcaption>
+  </figure>
+</section>
       <section id="adventures">
         <h2>Adventures</h2>
         <div class="adventure-gallery">
@@ -153,7 +135,33 @@
         </figure>
       </div>
     </section>
-    <section id="contact-form">
+
+<section class="adventure-gallery-section">
+  <h2>Adventure Awaits You!</h2>
+  <div class="adventure-gallery">
+    <figure>
+      <img src="images/rafting12.jpg" alt="Rafting Adventure 1">
+      <figcaption>Thrill Seeker Rapids</figcaption>
+    </figure>
+    <figure>
+      <img src="images/rafting15.jpg" alt="Rafting Adventure 2">
+      <figcaption>Sunset Splash</figcaption>
+    </figure>
+    <figure>
+      <img src="images/rafting16.jpg" alt="Rafting Adventure 3">
+      <figcaption>Jungle Drift</figcaption>
+    </figure>
+    <figure>
+      <img src="images/rafting42e.jpg" alt="Rafting Adventure 4">
+      <figcaption>Rapid Fury</figcaption>
+    </figure>
+    <figure>
+      <img src="images/rafting58.jpg" alt="Rafting Adventure 5">
+      <figcaption>Mountain Rush</figcaption>
+    </figure>
+  </div>
+</section>
+        <section id="contact-form">
       <h2>Send Us a Message</h2>
       <form action="submit-form.php" method="post" style="max-width: 600px;">
         <label for="name">Full Name:</label><br>
@@ -181,14 +189,6 @@
         <button type="submit" style="padding: 10px 20px; font-size: 1rem;">Send Message</button>
       </form>
     </section>
-    <section>
-      <h2>Adventure Awaits You!</h2>
-      <img src="images/rafting12.jpg" alt="Rafting Website Image">
-      <img src="images/rafting15.jpg" alt="Rafting Website Image">
-      <img src="images/rafting16.jpg" alt="Rafting Website Image">
-      <img src="images/rafting42e.jpg" alt="Rafting Website Image">
-      <img src="images/rafting58.jpg" alt="Rafting Website Image">
-    </section>
   </main>
   <section id="contact-info">
     <h2>Contact Us</h2>
@@ -205,29 +205,21 @@
     </div>
   </section>
   </section>
-  <section>
-    <h2>Adventure Awaits You!</h2>
-    <img src="images/rafting12.jpg" alt="Rafting Website Image">
-    <img src="images/rafting15.jpg" alt="Rafting Website Image">
-    <img src="images/rafting16.jpg" alt="Rafting Website Image">
-    <img src="images/rafting42e.jpg" alt="Rafting Website Image">
-    <img src="images/rafting58.jpg" alt="Rafting Website Image">
-  </section>
   </main>
-  <footer>
-    <p>© 2025 🌳 Tini Waterfall Adventure 🌳 Larbi Seth</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com">
-        <img src="images/facebook.png" alt="Facebook Logo">
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.png" alt="Twitter Logo">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.png" alt="Instagram Logo">
-      </a>
-    </nav>
-  </footer>
+<footer>
+  <p>© 2025 🌳 Tini Waterfall Adventure 🌳 Larbi Seth</p>
+  <nav class="socialmedia">
+    <a href="https://facebook.com">
+      <img src="images/facebook.png" alt="Facebook Logo">
+    </a>
+    <a href="https://twitter.com">
+      <img src="images/twitter.png" alt="Twitter Logo">
+    </a>
+    <a href="https://instagram.com">
+      <img src="images/instagram.png" alt="Instagram Logo">
+    </a>
+  </nav>
+</footer>
 </body>
 </html>
 </html>
