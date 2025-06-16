@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Larbi Seth | WDD 130</title>
-        <meta name="description" content="My name is Larbi Seth, I am taking Web and Computer Programming course at BYUPathway. This page is created for me to examing myself in creating a website.">
-        <meta name="author" content="Larbi Seth">
-        <link rel="stylesheet" href="styles/styles.css"> 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="wwr/">Rafting Website</a>
-            </nav>
-        </header>
-        <main>
-            <h1> Larbi Seth | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Hello, my name is Larbi Seth" width="200">
-            <p>Hello! My name is Larbi Seth and I am from Anyinam in Ghana. I have been enrolled at BYUPathway to study Software Development. I can't wait to create my first website.</p>
-        </main>
-        <aside>
-            <h2>Utah</h2>
-            <img src="images/utah.jpg" alt="Utah landscape">
-            <p>Utah is a state in the western United State. It is bordered by Colorado to the east, Wyoming to the northeast, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast. The state is a center of transportation, education, information technology, and research, and a major tourist destination for outdoor recreation. Salt Lake City, the state capital and largest city, is home to the headquarters of The Church of Jesus Christ of Latter-day Saints (LDS Church).</p>
-        </aside>
-        <footer>
-            <p>© 2025 🌹Larbi Seth🌹Anyinam, Ghana</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tini Waterfall Adventure | Home</title>
+  <meta name="description" content="Experience thrilling white water rafting adventures at Tini Waterfall in Adasewase. Join the fun today!" />
+  <link rel="stylesheet" href="rafting.css" />
+</head>
+
+<body>
+  <header>
+    <img src="images/splash.png" alt="Tini Waterfall Adventure Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="images/rafting59_600.jpg" alt="Rafting Adventure Hero Image" />
+      <h1 class="hero-heading">Thrill & Adventure Await at Tini Waterfall!</h1>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Ready to Ride the Rapids?</h2>
+      <p>Join our guided trips and explore the wild beauty of Adasewase!</p>
+      <a href="trips.html" class="btn">View Trips</a>
+    </section>
+
+    <!-- Grid Section for Site Purpose -->
+    <section class="about-grid">
+      <div class="grid-item">
+        <img src="images/rafting-fun.jpeg" alt="Group Rafting Fun">
+        <h3>Team Rafting Adventures</h3>
+        <p>Perfect for groups and corporate events. Enjoy thrilling rapids with safety and fun.</p>
+      </div>
+      <div class="grid-item">
+        <img src="images/waterfall-scenery.jpeg" alt="Scenic Waterfalls">
+        <h3>Scenic Natural Beauty</h3>
+        <p>Explore the stunning Tini Waterfall and surrounding forest. A visual feast for nature lovers!</p>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+      <h2>Join Our Adventure Community</h2>
+      <p>Get updates, discounts, and news. Sign up below!</p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tini Waterfall Adventure | Adasewase, Ghana</p>
+    <p><a href="trips.html">Explore Trips</a></p>
+  </footer>
+</body>
 </html>
